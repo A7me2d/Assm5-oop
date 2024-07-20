@@ -72,6 +72,24 @@ namespace Assm5_oop
             #endregion
 
 
+            #region Casting Operations OverLoading
+
+            //object obj = 2;
+            // int X = (int)obj;
+
+            //Complex C1 = new Complex() { Real = 2, Imag = 4 };
+            //string S1 =  C1;
+            // S1 =(string) C1;
+            //Console.WriteLine(S1);
+
+
+            //int Y = (int)C1;
+
+            //    Console.WriteLine(C1);
+            //    Console.WriteLine(Y);
+            #endregion
+
+
             #region
 
             #endregion

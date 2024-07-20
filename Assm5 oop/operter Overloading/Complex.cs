@@ -19,15 +19,13 @@ namespace Assm5_oop.operter_Overloading
 
 
         #region Operators Over
-
-        #endregion
         public static Complex operator +(Complex Left, Complex Right)
         {
-            return new Complex 
-            { 
-                Real = (Left?.Real?? 0 ) +( Right?.Real ?? 0),
-                Imag = (Left?.Imag ?? 0) + (Right?.Imag ?? 00 )
-            
+            return new Complex
+            {
+                Real = (Left?.Real ?? 0) + (Right?.Real ?? 0),
+                Imag = (Left?.Imag ?? 0) + (Right?.Imag ?? 00)
+
             };
         }
 
@@ -40,12 +38,12 @@ namespace Assm5_oop.operter_Overloading
             };
         }
 
-        public static Complex operator ++ (Complex C)
+        public static Complex operator ++(Complex C)
         {
-            return new Complex 
+            return new Complex
             {
-                Real = (C?.Real?? 0 ) + 1,
-                Imag = (C?.Imag ?? 0 )
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0)
             };
         }
 
@@ -58,20 +56,35 @@ namespace Assm5_oop.operter_Overloading
             };
         }
 
-        public static bool operator > (Complex Left, Complex Right)
+        public static bool operator >(Complex Left, Complex Right)
         {
-            if(Left.Real == Right.Imag)
+            if (Left.Real == Right.Imag)
                 return Left.Imag > Right.Imag;
             else
                 return Left.Real > Right.Real;
         }
 
-        public static bool operator < (Complex Left, Complex Right)
+        public static bool operator <(Complex Left, Complex Right)
         {
             if (Left.Real == Right.Imag)
                 return Left.Imag < Right.Imag;
             else
                 return Left.Real < Right.Real;
         }
+
+        #endregion
+
+        #region Casting
+        public static explicit operator int ( Complex C)
+        {
+            return C?.Real ?? 0;
+        }
+
+        public static implicit operator double(Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
+        #endregion
+
     }
 }
