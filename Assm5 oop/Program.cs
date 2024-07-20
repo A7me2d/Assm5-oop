@@ -1,4 +1,5 @@
-﻿using Assm5_oop.operter_Overloading;
+﻿using Assm5_oop.Casting_Opertot_Overloading;
+using Assm5_oop.operter_Overloading;
 
 namespace Assm5_oop
 {
@@ -87,6 +88,32 @@ namespace Assm5_oop
 
             //    Console.WriteLine(C1);
             //    Console.WriteLine(Y);
+            #endregion
+
+
+            #region 
+
+            //Employee employee = new Employee()
+            //{
+            //    Id = 10,
+            //    Fullname = "Ahmed Hany",
+            //    Password = "Pssword",
+            //    Email = "john.doe@gmail.com",
+            //    SecurtyStamp = Guid.NewGuid(),
+            //};
+
+            //EmployeeViewModel viewModel = new EmployeeViewModel();
+
+            //viewModel = (EmployeeViewModel)employee;
+
+            //Console.WriteLine(viewModel.FirstName);
+            //Console.WriteLine(viewModel.LastName);
+
+        //    object obj = new EmployeeViewModel() { FirstName = "John", LastName = "Hany" , Email = "Ahmed@gmailcom
+        //}
+  
+        //    EmployeeViewModel E = (EmployeeViewModel)obj;
+
             #endregion
 
 
