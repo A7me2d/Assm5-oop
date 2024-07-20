@@ -57,5 +57,21 @@ namespace Assm5_oop.operter_Overloading
                 Imag = (C?.Imag ?? 0)
             };
         }
+
+        public static bool operator > (Complex Left, Complex Right)
+        {
+            if(Left.Real == Right.Imag)
+                return Left.Imag > Right.Imag;
+            else
+                return Left.Real > Right.Real;
+        }
+
+        public static bool operator < (Complex Left, Complex Right)
+        {
+            if (Left.Real == Right.Imag)
+                return Left.Imag < Right.Imag;
+            else
+                return Left.Real < Right.Real;
+        }
     }
 }
