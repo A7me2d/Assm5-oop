@@ -1,6 +1,7 @@
 ﻿using Assm5_oop.Abstraction;
 using Assm5_oop.Casting_Opertot_Overloading;
 using Assm5_oop.operter_Overloading;
+using Assm5_oop.Stactic;
 
 namespace Assm5_oop
 {
@@ -142,6 +143,22 @@ namespace Assm5_oop
             #endregion
 
 
+            #region Static
+
+            //Utility U1 = new Utility(10 , 20);
+            //Console.WriteLine(U1.CmToInCh(254));
+            //Utility U2 = new Utility(100 , 200);
+            //Console.WriteLine(U2.CmToInCh(254));
+
+            //Console.WriteLine(Utility.CalcCircle);
+
+
+            //Console.WriteLine(Utility.CalcCircle(10));
+
+            //Utility utility;
+
+
+            #endregion
 
         }
     }

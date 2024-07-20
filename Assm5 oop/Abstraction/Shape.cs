@@ -27,6 +27,9 @@ namespace Assm5_oop.Abstraction
     {
         public RectBase(decimal dim01 , decimal dim02) : base (dim01 , dim02)
         {}
+
+        public override decimal Perimeter => throw new NotImplementedException();
+
         public override decimal CalcAre()
         {
             return Dim01 + Dim02;
