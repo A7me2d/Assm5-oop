@@ -1,6 +1,7 @@
 ﻿using Assm5_oop.Abstraction;
-using Assm5_oop.Casting_Opertot_Overloading;
+//using Assm5_oop.Casting_Opertot_Overloading;
 using Assm5_oop.operter_Overloading;
+using Assm5_oop.partial;
 using Assm5_oop.Stactic;
 
 namespace Assm5_oop
@@ -161,7 +162,15 @@ namespace Assm5_oop
             #endregion
 
 
-            #region
+            #region Partial
+
+            //Employee employee = new Employee();
+            //employee.Id = 10;
+            //employee.Name = "Ahmed Hany";
+            //employee.Age = 30;
+            //employee.Salary = 30;
+            //employee.Test = 10;
+            //employee.Tst();
 
 
 
