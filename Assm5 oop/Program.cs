@@ -1,4 +1,5 @@
-﻿using Assm5_oop.Casting_Opertot_Overloading;
+﻿using Assm5_oop.Abstraction;
+using Assm5_oop.Casting_Opertot_Overloading;
 using Assm5_oop.operter_Overloading;
 
 namespace Assm5_oop
@@ -91,7 +92,7 @@ namespace Assm5_oop
             #endregion
 
 
-            #region 
+            #region Casting Operations OverLoading
 
             //Employee employee = new Employee()
             //{
@@ -109,16 +110,35 @@ namespace Assm5_oop
             //Console.WriteLine(viewModel.FirstName);
             //Console.WriteLine(viewModel.LastName);
 
-        //    object obj = new EmployeeViewModel() { FirstName = "John", LastName = "Hany" , Email = "Ahmed@gmailcom
-        //}
-  
-        //    EmployeeViewModel E = (EmployeeViewModel)obj;
+            //    object obj = new EmployeeViewModel() { FirstName = "John", LastName = "Hany" , Email = "Ahmed@gmailcom
+            //}
+
+            //    EmployeeViewModel E = (EmployeeViewModel)obj;
 
             #endregion
 
 
-            #region
+            #region Abstraction
 
+            //Shape shape = new Shape();
+
+            //Rectangle rectangle = new Rectangle(30 , 10);
+            //decimal RecAre = rectangle.CalcAre();
+            //Console.WriteLine(RecAre);
+
+            //Console.WriteLine(rectangle.Perimeter);
+
+
+            //Console.WriteLine("============");
+
+            //Circle circle = new Circle(30);
+            //decimal CircAre = circle.CalcAre();
+            //Console.WriteLine($"CircAre = {CircAre} ");
+            //Console.WriteLine($"Perimeter = {circle.Perimeter}");
+
+            //Shape shape = new Rectangle(10 , 20);
+            //Console.WriteLine($"Area = {shape.CalcAre()}");
+            //Console.WriteLine($"Perimeter = {shape.Perimeter}");
             #endregion
 
 
