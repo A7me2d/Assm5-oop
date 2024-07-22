@@ -33,6 +33,8 @@ namespace Assm5_oop
         {
             //Point3D point3D = new Point3D();
 
+            #region First Project
+
             #region Q1
 
             //Point3D point3D = new Point3D();
@@ -116,44 +118,63 @@ namespace Assm5_oop
             #region Q6
 
 
-           // Point3D[] points = new Point3D[]
-           //{
-           //     new Point3D(3, 2, 5),
-           //     new Point3D(1, 5, 8),
-           //     new Point3D(3, 1, 7),
-           //     new Point3D(2, 4, 9),
-           //     new Point3D(1, 3, 6)
-           //};
+            // Point3D[] points = new Point3D[]
+            //{
+            //     new Point3D(3, 2, 5),
+            //     new Point3D(1, 5, 8),
+            //     new Point3D(3, 1, 7),
+            //     new Point3D(2, 4, 9),
+            //     new Point3D(1, 3, 6)
+            //};
 
-           // Console.WriteLine("Before sorting:");
-           // foreach (var point in points)
-           // {
-           //     Console.WriteLine(point);
-           // }
+            // Console.WriteLine("Before sorting:");
+            // foreach (var point in points)
+            // {
+            //     Console.WriteLine(point);
+            // }
 
-           // Array.Sort(points);
+            // Array.Sort(points);
 
-           // Console.WriteLine("\nAfter sorting:");
-           // foreach (var point in points)
-           // {
-           //     Console.WriteLine(point);
-           // }
+            // Console.WriteLine("\nAfter sorting:");
+            // foreach (var point in points)
+            // {
+            //     Console.WriteLine(point);
+            // }
 
 
-           // Point3D clonedPoint = (Point3D)points[0].Clone();
-           // Console.WriteLine("\nCloned Point:");
-           // Console.WriteLine(clonedPoint);
+            // Point3D clonedPoint = (Point3D)points[0].Clone();
+            // Console.WriteLine("\nCloned Point:");
+            // Console.WriteLine(clonedPoint);
 
-           // clonedPoint.X = 99;
-           // clonedPoint.Y = 99;
-           // clonedPoint.Z = 99;
+            // clonedPoint.X = 99;
+            // clonedPoint.Y = 99;
+            // clonedPoint.Z = 99;
 
-           // Console.WriteLine("\nAfter modifying the cloned point:");
-           // Console.WriteLine("Original Point: " + points[0]);
-           // Console.WriteLine("Cloned Point: " + clonedPoint);
+            // Console.WriteLine("\nAfter modifying the cloned point:");
+            // Console.WriteLine("Original Point: " + points[0]);
+            // Console.WriteLine("Cloned Point: " + clonedPoint);
             #endregion
+
+            #endregion
+
+            #region Second Project
+
+            int x = 10;
+            int y = 5;
+
+
+            int sum = Maths.Add(x, y);
+            int difference = Maths.Subtract(x, y);
+            int product = Maths.Multiply(x, y);
+            double quotient = Maths.Divide(x, y);
+
+            Console.WriteLine($"Add: {x} + {y} = {sum}");
+            Console.WriteLine($"Subtract: {x} - {y} = {difference}");
+            Console.WriteLine($"Multiply: {x} * {y} = {product}");
+            Console.WriteLine($"Divide: {x} / {y} = {quotient}");
+
+            #endregion
+
         }
-
-
     }
 }
