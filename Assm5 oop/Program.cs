@@ -235,7 +235,7 @@ namespace Assm5_oop
             //Console.WriteLine("D1 (d1 - d2): " + d1.ToString());
 
             //Console.WriteLine("d1 > d2: " + (d1 > d2));
-            //Console.WriteLine("d1 <= d2: " + (d1 <= d2));
+            //Console.WriteLine("d1 < d2: " + (d1 < d2));
 
             //if (d1)
             //{

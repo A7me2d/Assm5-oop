@@ -96,22 +96,25 @@ namespace Assm5_oop.Class
         }
 
 
-        //public static Duration operator -- (Duration d)
-        //{
-        //    return d - 60;
-        //}
+        public static Duration operator --(Duration d)
+        {
+           int totalSeconds = d.ToTotalSeconds() - 60;
+           if (totalSeconds < 0 ) totalSeconds = 0;
+            d.FromTotalSeconds(totalSeconds);
+            return d;
+        }
 
 
-        //public static bool operator >(Duration d1, Duration d2)
-        //{
-        //    return d1.ToTotalSeconds() > d2.ToTotalSeconds();
-        //}
+        public static bool operator >(Duration d1, Duration d2)
+        {
+            return d1.ToTotalSeconds() > d2.ToTotalSeconds();
+        }
 
 
-        //public static bool operator <=(Duration d1, Duration d2)
-        //{
-        //    return d1.ToTotalSeconds() <= d2.ToTotalSeconds();
-        //}
+        public static bool operator <(Duration d1, Duration d2)
+        {
+            return d1.ToTotalSeconds() <= d2.ToTotalSeconds();
+        }
 
         public static implicit operator bool(Duration d)
         {
@@ -127,5 +130,14 @@ namespace Assm5_oop.Class
         {
             return Hours * 3600 + Minutes * 60 + Seconds;
         }
+
+        private void FromTotalSeconds(int totalSeconds)
+        {
+            Hours = totalSeconds / 3600;
+            totalSeconds %= 3600;
+            Minutes = totalSeconds / 60;
+            Seconds = totalSeconds % 60;
+        }
+
     }
 }
