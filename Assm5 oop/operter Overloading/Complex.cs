@@ -75,15 +75,15 @@ namespace Assm5_oop.operter_Overloading
         #endregion
 
         #region Casting
-        //public static explicit operator int ( Complex C)
-        //{
-        //    return C?.Real ?? 0;
-        //}
+        public static explicit operator int(Complex C)
+        {
+            return C?.Real ?? 0;
+        }
 
-        //public static implicit operator double(Complex C)
-        //{
-        //    return C?.ToString() ?? string.Empty;
-        //}
+        public static implicit operator string(Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
         #endregion
 
     }
