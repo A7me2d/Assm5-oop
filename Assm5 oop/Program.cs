@@ -31,7 +31,6 @@ namespace Assm5_oop
 
             static void Main(string[] args)
         {
-            //Point3D point3D = new Point3D();
 
             #region First Project
 
@@ -159,21 +158,100 @@ namespace Assm5_oop
 
             #region Second Project
 
-            int x = 10;
-            int y = 5;
+            //int x = 10;
+            //int y = 5;
 
 
-            int sum = Maths.Add(x, y);
-            int difference = Maths.Subtract(x, y);
-            int product = Maths.Multiply(x, y);
-            double quotient = Maths.Divide(x, y);
+            //int sum = Maths.Add(x, y);
+            //int difference = Maths.Subtract(x, y);
+            //int product = Maths.Multiply(x, y);
+            //double quotient = Maths.Divide(x, y);
 
-            Console.WriteLine($"Add: {x} + {y} = {sum}");
-            Console.WriteLine($"Subtract: {x} - {y} = {difference}");
-            Console.WriteLine($"Multiply: {x} * {y} = {product}");
-            Console.WriteLine($"Divide: {x} / {y} = {quotient}");
+            //Console.WriteLine($"Add: {x} + {y} = {sum}");
+            //Console.WriteLine($"Subtract: {x} - {y} = {difference}");
+            //Console.WriteLine($"Multiply: {x} * {y} = {product}");
+            //Console.WriteLine($"Divide: {x} / {y} = {quotient}");
 
             #endregion
+
+            #region Third Project
+
+            #region Q1.2
+            //Duration d1 = new Duration(1, 30, 45);
+            //Duration d2 = new Duration(1, 30, 45);
+            //Duration d3 = new Duration(2, 15, 30);
+
+            //Console.WriteLine("Duration 1: " + d1.ToString());
+            //Console.WriteLine("Duration 2: " + d2.ToString());
+            //Console.WriteLine("Duration 3: " + d3.ToString());
+
+            //Console.WriteLine("d1 equals d2: " + d1.Equals(d2));
+            //Console.WriteLine("d1 equals d3: " + d1.Equals(d3));
+
+            //Console.WriteLine("Hash code of d1: " + d1.GetHashCode());
+            //Console.WriteLine("Hash code of d2: " + d2.GetHashCode());
+            //Console.WriteLine("Hash code of d3: " + d3.GetHashCode());
+
+            #endregion
+
+
+            #region Q3
+            //Duration d1 = new Duration(1, 10, 15);
+            //Console.WriteLine(d1.ToString()); 
+
+            //Duration d2 = new Duration(3600);
+            //Console.WriteLine(d2.ToString());
+
+            //Duration d3 = new Duration(7800);
+            //Console.WriteLine(d3.ToString()); 
+
+            //Duration d4 = new Duration(666);
+            //Console.WriteLine(d4.ToString());
+
+            #endregion
+
+
+            #region Q4
+
+            //Duration d1 = new Duration(1, 10, 15);
+            //Duration d2 = new Duration(7800);
+
+            //Duration d3 = d1 + d2;
+            //Console.WriteLine("D3 (d1 + d2): " + d3.ToString());
+
+            //d3 = d1 + 7800;
+            //Console.WriteLine("D3 (d1 + 7800): " + d3.ToString());
+
+            //d3 = 666 + d3;
+            //Console.WriteLine("D3 (666 + d3): " + d3.ToString());
+
+            //d3 = ++d1;
+            //Console.WriteLine("D3 (++d1): " + d3.ToString());
+
+            //d3 = --d2;
+            //Console.WriteLine("D3 (--d2): " + d3.ToString());
+
+            //d1 = d1 - d2;
+            //Console.WriteLine("D1 (d1 - d2): " + d1.ToString());
+
+            //Console.WriteLine("d1 > d2: " + (d1 > d2));
+            //Console.WriteLine("d1 <= d2: " + (d1 <= d2));
+
+            //if (d1)
+            //{
+            //    Console.WriteLine("d1 is not zero.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("d1 is zero.");
+            //}
+
+            //DateTime dt = (DateTime)d1;
+            //Console.WriteLine("DateTime representation of d1: " + dt);
+            #endregion
+
+            #endregion
+
 
         }
     }
